@@ -1,5 +1,7 @@
 # dsh-plugin-btw (BTW side questions)
 
+> **Note**: development has moved to the [ZaiMaxvx/dsh-utils](https://github.com/ZaiMaxvx/dsh-utils) monorepo (`plugins/btw`); this repository remains the standalone install channel.
+
 `/btw` for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (dsh)
 `v0.2.2-rc.1+`: **immediate side questions** — a lightweight one-shot model call
 answered from the current session context, without touching the main
