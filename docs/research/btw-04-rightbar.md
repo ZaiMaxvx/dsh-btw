@@ -1,7 +1,7 @@
 # 调研 #4：dsh Web UI 右侧边栏（rightbar）tab 扩展机制
 
 目标：为 /btw 插件的"队列管理面板"找到放进右侧边栏的注册路径。
-源码：`D:/Code/Projects/dsh-rewind/dsh-source-rc2/src`（dsh v0.2.2-rc.2），与 rc.1（`D:/Code/Projects/dsh-rewind/dsh-source/src`）已做对比。
+源码：`D:/Code/Projects/dsh-utils/dsh-source-rc2/src`（dsh v0.2.2-rc.2），与 rc.1（`D:/Code/Projects/dsh-utils/dsh-source/src`）已做对比。
 
 ## 结论（TL;DR）
 

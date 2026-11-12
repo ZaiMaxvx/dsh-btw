@@ -1,6 +1,6 @@
 # btw 调研 06：/btw 插件工程化方案（最大化复用 rewind 插件资产）
 
-调研子 agent #6（共 6）。源码树：`D:/Code/Projects/dsh-rewind/dsh-source-rc2/src`（dsh v0.2.2-rc.2，兼顾 rc.1 核对）；被复用资产：`D:/Code/Projects/dsh-rewind/rewind-plugin/`（dsh-plugin-rewind v0.1.1，双半包）；git 仓库根：`D:/Code/Projects/dsh-rewind/repo/`（GitHub `ZaiMaxvx/dsh-rewind`，仓库根即插件包根）。
+调研子 agent #6（共 6）。源码树：`D:/Code/Projects/dsh-utils/dsh-source-rc2/src`（dsh v0.2.2-rc.2，兼顾 rc.1 核对）；被复用资产：`D:/Code/Projects/dsh-utils/rewind-plugin/`（dsh-plugin-rewind v0.1.1，双半包）；git 仓库根：`D:/Code/Projects/dsh-utils/repo/`（GitHub `ZaiMaxvx/dsh-rewind`，仓库根即插件包根）。
 
 产品形态假设（来自分工简报）：btw = "命令 + 客户端面板"型 —— `/btw <text>` 把一条附言停靠（park）到当前会话的队列；agent 空闲时按配置投递；Web 侧一个面板管理队列（查看/改/删/立即发送），面板靠客户端状态订阅保持实时。比 rewind **少** surface replace 提交逻辑、**多** 客户端状态订阅与常驻面板。
 
@@ -213,8 +213,8 @@ rewind 三层：纯函数（planner）+ 真实 Session 集成（rewind-session�
 
 ## 10. 关键路径索引（绝对路径）
 
-- 复用资产：`D:/Code/Projects/dsh-rewind/rewind-plugin/`（scripts、tests、双面 tsconfig、vitest.config）
-- dsh rc.2 源树：`D:/Code/Projects/dsh-rewind/dsh-source-rc2/src`；rc.1：`D:/Code/Projects/dsh-rewind/dsh-source/src`
+- 复用资产：`D:/Code/Projects/dsh-utils/rewind-plugin/`（scripts、tests、双面 tsconfig、vitest.config）
+- dsh rc.2 源树：`D:/Code/Projects/dsh-utils/dsh-source-rc2/src`；rc.1：`D:/Code/Projects/dsh-utils/dsh-source/src`
 - sidebar-right 文档：`…/dsh-source-rc2/src/docs/subsystems/sidebar-right.md`；tab 注册样板：`…/packages/client/ui-sidebar-terminal/src/client/index.ts`
 - settings/表单：`…/docs/subsystems/settings.md`、`…/docs/cookbook/adding-a-settings-card.md`
 - 图标：`…/packages/client/ui-primitives/src/icons/index.tsx`、`…/src/plugin-artwork.tsx`

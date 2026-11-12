@@ -66,7 +66,7 @@
 
 ## 6. dsh 现有排队语义（本地源码，v0.2.2-rc.2）
 
-来源：`D:/Code/Projects/dsh-rewind/dsh-source-rc2/src/packages/core/agent/src/runtime-types.ts`（Agent 接口）与 `docs/agent-lifecycle.md`。
+来源：`D:/Code/Projects/dsh-utils/dsh-source-rc2/src/packages/core/agent/src/runtime-types.ts`（Agent 接口）与 `docs/agent-lifecycle.md`。
 
 四个入口（runtime-types.ts L234–271）：
 
@@ -118,4 +118,4 @@ glossary 相关条目（docs/glossary.md）：**human command** — "a slash-pre
 - 博客：[Claude Code /btw — Vincent Qiao](https://blog.vincentqiao.com/en/posts/claude-code-btw) · [MindStudio](https://www.mindstudio.ai/blog/claude-code-btw-command-save-tokens) · [Steering 实测 — tim-schipper.nl](https://tim-schipper.nl/en/blog/claude-code-interrupt-and-steer) · [AI Drops v2.1.79](https://getaidrops.com/claude/changelog/2.1.79)
 - 社区：[GitHub issue #14804（引入时间线）](https://github.com/anthropics/claude-code/issues/14804) · [r/ClaudeCode 1rqlry4](https://www.reddit.com/r/ClaudeCode/comments/1rqlry4/have_you_tried_the_new_btw_command/) · [r/ClaudeAI 1rqgtlc](https://www.reddit.com/r/ClaudeAI/comments/1rqgtlc/btw_im_ultrathinking_to_simplify_the_loop_of) · [issue #44876](https://github.com/anthropics/claude-code/issues/44876) · [issue #18399（排队命令变原文的 bug）](https://github.com/anthropics/claude-code/issues/18399) · [Last Week in Claude Code #3](https://newsletter.claudecodemasterclass.com/p/last-week-in-claude-code-3-btw-voice)
 - 其他产品：[Codex slash commands](https://learn.chatgpt.com/docs/cli/slash-commands) · [Codex steer/queue/fork](https://blog.devgenius.io/codex-clis-busy-week-steer-mode-fork-and-7-releases-in-3-days-ece5c742923e) · [codex#23615](https://github.com/openai/codex/issues/23615) · [Gemini model steering](https://geminicli.com/docs/cli/model-steering) · [gemini-cli#17282](https://github.com/google-gemini/gemini-cli/issues/17282) · [gemini-cli#17197](https://github.com/google-gemini/gemini-cli/issues/17197) · [Cursor 论坛 queue 设置](https://forum.cursor.com/t/add-message-to-queue-to-enforce-sequential-work-of-agent/171581) · [Copilot 队列 feature request](https://github.com/microsoft/copilot-intellij-feedback/issues/2020)
-- 本地：`D:/Code/Projects/dsh-rewind/dsh-source-rc2/src/packages/core/agent/src/runtime-types.ts`（followup/steer/inject/send 接口）· `D:/Code/Projects/dsh-rewind/dsh-source-rc2/src/docs/agent-lifecycle.md`（claim/waterfall 时序）· `D:/Code/Projects/dsh-rewind/dsh-source-rc2/src/docs/glossary.md`（human command / command plane 条目）
+- 本地：`D:/Code/Projects/dsh-utils/dsh-source-rc2/src/packages/core/agent/src/runtime-types.ts`（followup/steer/inject/send 接口）· `D:/Code/Projects/dsh-utils/dsh-source-rc2/src/docs/agent-lifecycle.md`（claim/waterfall 时序）· `D:/Code/Projects/dsh-utils/dsh-source-rc2/src/docs/glossary.md`（human command / command plane 条目）

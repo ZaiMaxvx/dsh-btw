@@ -1,6 +1,6 @@
 # btw-03 调研笔记：dsh 斜杠命令通道与 transcript 呈现（dsh v0.2.2-rc.2）
 
-源码根：`D:/Code/Projects/dsh-rewind/dsh-source-rc2/src`（下文路径均相对此根）。
+源码根：`D:/Code/Projects/dsh-utils/dsh-source-rc2/src`（下文路径均相对此根）。
 目的：为 `/btw` 插件确定命令注册方式、结果在 transcript 中的呈现方式、裸调用交互。
 
 ---

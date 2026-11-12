@@ -1,7 +1,5 @@
 # dsh-plugin-btw（BTW 侧问）
 
-> **注记**：开发主场已迁移至 [ZaiMaxvx/dsh-utils](https://github.com/ZaiMaxvx/dsh-utils) 综合仓库（`plugins/btw`）；本仓库仍是独立安装渠道。
-
 为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（dsh）`v0.2.2-rc.1+`
 打造的 `/btw` 插件：**即时侧问**——基于当前会话上下文立即作答的轻量单轮调用，
 不打扰主对话，问答永不进入主历史。答案展示在**右侧边栏 BTW 面板**与命令卡片中。

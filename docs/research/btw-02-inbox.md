@@ -1,6 +1,6 @@
 # /btw 调研 #2：dsh 消息队列 / Inbox 机制（host 侧）
 
-源码：`D:/Code/Projects/dsh-rewind/dsh-source-rc2/src`（deepseek-ai/deepseek-harness tag `dsh-v0.2.2-rc.2`）
+源码：`D:/Code/Projects/dsh-utils/dsh-source-rc2/src`（deepseek-ai/deepseek-harness tag `dsh-v0.2.2-rc.2`）
 结论先行：**/btw 命令 handler 正道 = `ctx.commands.register({ name: 'btw', ... })`，在 handler 里拿 `invocation.agent`（完整 `Agent`，含 `inbox`），用 `createUserMessage(...)` 造消息后调 `agent.followup(msg)`（运行中自动落 next-turn 队列、不打断当前 turn；空闲时立即开新 turn）。管理（删除/编辑/转 steer）用 `agent.inbox.remove/replace/splice`（durable），或走 Remote 面 `session.updateQueue({sessionId, itemId, action})`（按 `MessageId` 定位）。不需要也不应该走 `session.prompt` RPC——那是浏览器输入框的通道，插件命令在 host 进程内直接持有 Agent。**
 
 ---

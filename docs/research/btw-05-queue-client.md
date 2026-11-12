@@ -1,6 +1,6 @@
 # btw-05 调研笔记：dsh 客户端如何读取与管理排队消息（queue/inbox）数据
 
-源码：`D:/Code/Projects/dsh-rewind/dsh-source-rc2/src`（dsh v0.2.2-rc.2）
+源码：`D:/Code/Projects/dsh-utils/dsh-source-rc2/src`（dsh v0.2.2-rc.2）
 目标：为 /btw 插件的"队列面板"（列出待消费 btw 消息、支持删除/编辑）提供数据通路。
 
 ## 0. 一图流（TL;DR）

@@ -1,18 +1,20 @@
 {
   "name": "dsh-plugin-btw",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Side questions (/btw) for DeepSeek Harness (dsh): immediate tool-free answers from the current session context, without touching the main conversation — /btw command plus the right-sidebar BTW panel.",
   "type": "module",
   "license": "MIT",
-  "main": "src/index.ts",
+  "main": "lib/index.js",
   "exports": {
-    ".": "./src/index.ts",
-    "./client": "./src/client/index.ts",
-    "./types": "./src/types.ts",
-    "./sideask": "./src/sideask.ts",
-    "./history": "./src/history.ts",
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
     "./package.json": "./package.json",
-    "./locale/*.json": "./locale/*.json"
+    "./locale/*.json": "./locale/*.json",
+    "./src/*": "./src/*"
   },
   "dsh": {
     "bundle": {
@@ -35,14 +37,13 @@
     "dsh": ">=0.2.2-rc.1 <0.3.0"
   },
   "scripts": {
-    "test": "node --import ./scripts/register-hooks.mjs --import tsx scripts/smoke.sideask.mjs && vitest run tests/fold.spec.ts tests/view.spec.ts",
-    "check": "tsc -p tsconfig.check.host.json --noEmit && tsc -p tsconfig.check.client.json --noEmit"
+    "test": "node --import ./scripts/register-hooks.mjs --import tsx scripts/smoke.sideask.mjs && vitest run tests/fold.spec.ts tests/view.spec.ts"
   },
   "dependencies": {
     "zod": "4.6.6"
   },
   "files": [
-    "src",
+    "lib",
     "locale",
     "cordis.patch.yml",
     "LICENSE",
@@ -56,13 +57,13 @@
     "side-question",
     "plugin"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ZaiMaxvx/dsh-btw.git"
-  },
   "homepage": "https://github.com/ZaiMaxvx/dsh-btw#readme",
   "bugs": {
     "url": "https://github.com/ZaiMaxvx/dsh-btw/issues"
   },
-  "author": "ZaiMaxvx"
+  "author": "ZaiMaxvx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZaiMaxvx/dsh-btw.git"
+  }
 }

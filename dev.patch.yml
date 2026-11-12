@@ -1,8 +1,6 @@
-# Development overlay — load the host half straight from TypeScript source:
+# Development overlay - load the host half straight from source:
 #   pnpm dsh web --patch ./dev.patch.yml
-# Patch lines must use absolute paths; the host half runs under Node >= 24.9
-# native type-stripping (zod resolves from the dsh workspace). The browser
-# half needs the tsdown client bundle first (see README).
+# (requires a dsh source checkout running with tsx; installed profiles load lib/ instead)
 - insert:
     - id: btw
-      name: 'D:/Code/Projects/dsh-rewind/btw-plugin/src/index.ts'
+      name: 'D:/Code/Projects/dsh-utils/repo-btw/src/index.ts'
